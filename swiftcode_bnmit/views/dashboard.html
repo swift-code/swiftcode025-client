@@ -1,0 +1,181 @@
+<div class="container-fluid">
+    <div class="row main-header">
+        <div class="col-md-6">
+            <p class="f16 margin-top-5"> Welcome </p>
+        </div>
+        <div class="col-md-6">
+            <p class="pull-right"> <span id="username_email"></span> &nbsp; <a class="btn btn-red"> Logout </a> </p>
+        </div>
+    </div> <!-- /. main-header -->
+</div> <!-- /. container-fluid -->
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav" id="mainMenu">
+                <li class="active">
+                    <a data-target="#profile" data-toggle="tab">
+                        <i class="fa fa-file-text"></i>
+                        <p> Profile </p>
+                    </a>
+                </li>
+                <li>
+                    <a data-target="#connections" data-toggle="tab">
+                        <i class="fa fa-link"></i>
+                        <p> Connections </p>
+                    </a>
+                </li>
+                <li >
+                    <a data-target="#requests" data-toggle="tab">
+                        <i class="fa fa-user-plus"></i>
+                        <p> Requests </p>
+                    </a>
+                </li>                
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Tab content -->
+<div class="container-fluid" id="mainTab">
+    <div class="tab-content">
+
+        <!-- Profile tab content -->
+        <div role="tabpanel" class="tab-pane active in fade" id="profile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="row">                            
+
+                            <div class="col-md-6">
+                                <div class="panel-white">  
+                                    <center>                                                            
+                                        <img src="http://static2.fjcdn.com/comments/I+kinda+dig+old+batman+_1aeba46f5f2851f4c7c647d598e051c0.jpg" class="img-responsive" />
+                                    </center>
+                                </div> <!-- /. panel-white -->
+                            </div> <!-- /.col-md-6 -->
+
+                            <div class="col-md-6">
+                                <div class="panel-white">
+
+                                    <form>
+                                        <div class="login-table">
+                                            <h3 class="center margin-bottom-20"> PROFILE </h3>
+
+                                            <input type="text" required class="form-input margin-bottom-20" placeholder="First Name">
+                                            <input type="text" required class="form-input margin-bottom-20" placeholder="Last Name">
+                                            <input type="text" required class="form-input margin-bottom-20" placeholder="Company">
+
+                                            <div class="center">
+                                                <button type="submit" class="btn btn-primary margin-bottom-10"> UPDATE </button>                                 
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                </div> <!-- /. panel-white -->
+                            </div> <!-- /.col-md-6 -->
+
+                        </div> <!-- /. row -->
+                    </div> <!-- col-md-8 col-md-offset-2 -->
+                </div> <!-- /. row -->
+            </div> <!-- /. container -->
+        </div> <!-- /. profile -->
+
+        <!-- Connections tab content -->
+        <div role="tabpanel" class="tab-pane fade" id="connections">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="center"><b> YOUR CONNECTIONS </b></h3>
+                        <div class="row">
+                            <div class="col-md-12 margin-top-10">
+                                <center>                                    
+                                    <p> You have no connections yet. </p>
+                                </center>
+                            </div> 
+                            <div class="col-md-4 margin-top-20">
+                                <center>
+                                    <img src="https://thesocietypages.org/socimages/files/2009/05/nopic_192.gif" width="80" class="img-responsive img-circle margin-bottom-20" />
+                                    <p> </p>
+                                    <p> </p>
+                                </center>
+                            </div>                            
+                        </div> <!-- /. row -->
+                    </div> <!-- /. col-md-12 -->
+                </div><!-- /. row -->
+                <hr class="greyline"/>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="center"><b> SUGGESTED CONNECTIONS </b></h3>
+                        <div class="row">
+                            <div class="col-md-12 margin-top-10">
+                                <center>                                    
+                                    <p> There are no suggestions for you. </p>
+                                </center>
+                            </div> 
+                            <div class="col-md-4 margin-top-20">
+                                <center>
+                                    <img src="https://thesocietypages.org/socimages/files/2009/05/nopic_192.gif" width="80" class="img-responsive img-circle margin-bottom-20" />
+                                    <p> </p>
+                                    <button class="btn btn-sm btn-success"> Send Request </button>
+                                </center>
+                            </div>      
+                        </div> <!-- /. row -->
+                    </div> <!-- /. col-md-12 -->
+                </div> <!-- /. row -->
+                <br />
+            </div> <!-- /. container -->
+        </div> <!-- /. connections -->
+
+        <!-- Requests tab content -->
+        <div role="tabpanel" class="tab-pane fade" id="requests">
+            <div class="container">                
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="center margin-bottom-20"><b> REQUESTS RECEIVED </b></h3>
+                        <div class="row">
+                            <div class="col-md-12 margin-top-10">
+                                <center>                                    
+                                    <p> There are no pending requests for you. </p>
+                                </center>
+                            </div> 
+                            <div class="col-md-4 margin-top-20">
+                                <center>
+                                    <img src="https://thesocietypages.org/socimages/files/2009/05/nopic_192.gif" width="80" class="img-responsive img-circle margin-bottom-20" />
+                                    <p> </p>
+                                    <button class="btn btn-sm btn-success"> Accept Request </button>
+                                </center>
+                            </div>      
+                        </div> <!-- /. row -->
+                </div> <!-- /. row -->
+                <br />
+            </div> <!-- /. container -->
+        </div> <!-- /. requests -->   
+
+    </div> <!-- /. mainTab -->
+</div> <!-- /. container-fluid -->
+
+<!-- Response Modal -->
+<div class="modal fade modal fade" id="dashboardMsgModal">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content center modal-placement">
+            <div class="modal-header">                
+                <p class="f16"> </p>
+            </div>
+            <div class="modal-body" align="middle">
+                <button class="btn btn-sm btn-success" data-dismiss="modal"> OK </button>
+            </div>
+        </div>
+    </div>
+</div>

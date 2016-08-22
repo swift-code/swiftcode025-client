@@ -1,0 +1,39 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<div class="panel-white">
+
+				<form ng-submit="signup()">
+					<div class="login-table">
+						<h3 class="center margin-bottom10"> SIGN UP </h3>
+						<br />
+						<div class="row">
+							<div class="col-md-6">
+								<input ng-model="signupData.firstName" type="text" required class="form-input margin-bottom-20" placeholder="First Name">
+							</div>
+							<div class="col-md-6">
+								<input ng-model="signupData.lastName" type="text" required class="form-input margin-bottom-20" placeholder="Last Name">
+							</div>
+						</div>
+
+						<input ng-mode="signupData.email" type="email" required class="form-input margin-bottom-20" placeholder="Email">
+						<input ng-model="signupData.password" type="password" required pattern=".{8,}" title="Minimum 8 characters must be there" class="form-input margin-bottom-20" placeholder="Password">
+
+						<div class="center">
+							<p class="validation-msg"> </p>
+							<button type="submit" class="btn btn-primary"> SIGN UP </button>
+						</div>
+
+						<hr />
+						<div class="row margin-bottom-10">
+							<div class="col-md-12 center">
+							    <p> <a href="#/login" class="underline center"> Existing user? </a> </p>
+							</div>
+						</div>
+					</div>
+				</form>
+
+			</div> <!-- /. panel-white -->
+		</div> <!-- /.col-md-4 col-md-offset-4 -->
+	</div> <!-- /. row -->
+</div> <!-- /.container -->

@@ -1,0 +1,259 @@
+/* -------------------------------------------
+	GLOBAL STYLES
+---------------------------------------------- */
+body {
+	background-color: #EEE;
+	background-size: 100%;
+	width: 100%;
+	font-family: 'Muli', sans-serif;
+	word-wrap: break-word;
+}
+
+a {
+	cursor: pointer;
+}
+
+button:focus, a:focus {
+	outline:0 !important;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.hidden {
+	display: none;
+}
+
+.greyline {
+	border-top: 1px solid #ccc;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.btn a, .btn a:hover, .btn a:visited, .btn a:active, .btn, .btn:hover, .btn:active, .btn:visited {
+	text-decoration: none;
+}
+.f16 {
+		font-size: 16px;
+}
+.form-input {
+	width: 100%;
+	padding: 5px 5px;
+	border-radius: 5px;
+	margin: 5px 0px 5px 0px;
+	border: 1px solid #CCC;
+}
+input[type='checkbox'] {
+	/* Double-sized Checkboxes */
+	-ms-transform: scale(1.5); /* IE */
+	-moz-transform: scale(1.5); /* FF */
+	-webkit-transform: scale(1.5); /* Safari and Chrome */
+	-o-transform: scale(1.5); /* Opera */
+	margin-top: 0px;
+}
+input, select {
+	border-radius: 3px;
+	border: 1px solid #CCC;
+	color: #000;
+	padding-left: 3px;
+}
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+
+.margin-top-5 {
+	margin-top: 5px;
+}
+
+.margin-top-3 {
+	margin-top: 3px;
+}
+
+
+.margin-top-10 {
+	margin-top: 10px;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
+}
+
+.margin-top-40 {
+	margin-top: 20px;
+}
+
+.margin-top-40 {
+	margin-top: 40px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	border-top: 0px;
+}
+.btn-inverse {
+	color: #000 !important;
+}
+#mainTab {
+	margin: 0px;
+	padding: 0px;
+}
+#mainTab .tab-content {
+	padding-top: 0px;
+}
+.panel-white {
+	background: #fff;
+	box-shadow: 1px 1px 1px 1px #CCC;
+	margin-top: 50px;
+	padding: 30px 30px;
+}
+.sub-header{
+	background: #292A30;
+	min-width: 100%;
+	color: #fff;
+	padding: 15px 10px 5px 10px;
+}
+.sub-header-with-date{
+	background: #292A30;
+	min-width: 100%;
+	color: #fff;
+	padding: 15px 10px 12px 10px;
+}
+.margin-top-50 {
+	margin-top: 50px;
+}
+.bootbox .modal-content {
+	margin-top: 150px;
+}
+input:disabled, select:disabled {
+	background: #FCFCFC;
+}
+
+/* ---------------------------------------
+	FOOTER
+------------------------------------------ */
+footer {
+	width: 100%;
+	background: #31363C;
+	color: #EEE;
+	margin-top: 30px;
+	padding: 10px 100px;
+}
+
+/* ---------------------------------------------------
+	STICKY FOOTER
+------------------------------------------------------ */
+html, body {
+	height: 100%;
+}
+
+#wrap {
+	min-height: 100%;
+}
+
+
+#main {
+	overflow:auto;
+	padding-bottom: 40px;
+}  /* must be same height as the footer */
+
+#footer {
+	position: relative;
+	margin-top: -40px; /* negative value of footer height */
+	height: 40px;
+	clear:both;
+}
+
+/* ---------------------------------------------------
+	NAVBAR
+------------------------------------------------------ */
+.navbar {
+    width: 100%;
+    background: #31363C;
+    border: 0px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+.navbar li a {
+    text-align: center;
+}
+.navbar li a i {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #E6E6E6;
+}
+.navbar li a p {
+    font-size: 14px;
+    color: #E6E6E6;
+}
+.nav .active a, .nav a:hover  {
+    background: none !important;
+}
+.nav .active a i, .nav .active a p, .nav a:hover>i, .nav a:hover>p  {
+    color: #FEC63D !important;
+}
+.main-header {
+    padding-top: 10px;
+    background: #111;
+    color: #E6E6E6;
+}
+.btn-red {
+    background: #840705;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+.btn-red:hover {
+    color: #CCC;
+}
+
+.border-right {
+	min-height:
+	border-right: 2px solid #CCC;
+}
+
+.validation-msg {
+	color: red;
+}
+
+.modal-content {
+	margin-top: 150px;
+}
+@media screen and (min-width:1200px) {
+    ul.nav {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+    }
+    .nav li {
+        display: inline-block;
+        width: 33.33%;
+        margin: 0;
+        padding: 0;
+    }
+    .nav a {
+        text-align:center;
+        padding: 12px 0 13px 0;
+        margin: 0;
+        display: block;
+    }
+    .profile-view .nav li {
+    	width: 50%;
+    }
+}
+
+/* $2a$10$06voXYE9YR6bWwKcD9ZTeu7B9SiEuxUzC4yA2fkrBaAySyMfMqk5a */
