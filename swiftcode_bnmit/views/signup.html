@@ -16,11 +16,11 @@
 							</div>
 						</div>
 
-						<input ng-mode="signupData.email" type="email" required class="form-input margin-bottom-20" placeholder="Email">
+						<input ng-model="signupData.email" type="email" required class="form-input margin-bottom-20" placeholder="Email">
 						<input ng-model="signupData.password" type="password" required pattern=".{8,}" title="Minimum 8 characters must be there" class="form-input margin-bottom-20" placeholder="Password">
 
 						<div class="center">
-							<p class="validation-msg"> </p>
+							<p class="validation-msg"> {{ responseMessage }}</p>
 							<button type="submit" class="btn btn-primary"> SIGN UP </button>
 						</div>
 
